@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "BogleWeb-Regular";
+  src: url("../fonts/BogleWeb-Regular.eot");
+  src: url("../fonts/BogleWeb-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/BogleWeb-Regular.woff2") format("woff2"),
+  url("../fonts/BogleWeb-Regular.woff") format("woff"),
+  url("../fonts/BogleWeb-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  font-family: "BogleWeb-Regular", Verdana, sans-serif;
+  font-weight: 300;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+#wrapper a { text-decoration: none; }
+
+#ad {
+  box-sizing: border-box;
+  background: white;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #b1b1b1;
+}
+
+.imgBg {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  top: 0;
+}
+
+.headline {
+  position: absolute;
+  color: #041e42;
+  top: 30px;
+  width: 100%;
+  font-size: 24px;
+  opacity: 0;
+}
+
+.headline strong {
+  display: block;
+}
+
+#logo {
+  position: absolute;
+  display: none;
+  width: 100px;
+}
+
+#button {
+  position: absolute;
+  display: none;
+  width: 32px;
+}
+
+#value {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 9px;
+  color: white;
+  text-align: right;
+  background: black;
+  padding: 0 2px;
+}
+
+#error {
+  display: none;
+  height: 100%;
+  align-items: center;
+  padding: 20px;
+  color: #cc0001;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+   #headline03 { font-size: 18px; }
+}

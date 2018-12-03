@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>1:1 Flexible on steroids within locked wrapper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        var clickTag = "http://www.walmart.com";
+    </script>
+    <style>
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+           #headline03 { font-size: 18px !important; }
+        }
+        _:-ms-fullscreen, :root .ie11up { font-size: 18px !important; }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <a href="javascript:window.open(window.clickTag)">
+            <div id="ad">
+                <div id="bg0" class="imgBg"></div>
+                <div id="bg1" class="imgBg"></div>
+                <div id="bg2" class="imgBg"></div>
+                <div id="bg3" class="imgBg" style="font-size: 20px;"></div>
+                <div id="headline0" class="headline">Every shopper</div>
+                <div id="headline1" class="headline">Every buying signal</div>
+                <div id="headline2" class="headline">Every transaction</div>
+                <div id="headline3" class="headline">Every shopper has a journey.</div>
+                <div id="headline4" class="headline"><strong id="strong">Be a part of it.</strong></div>
+                <img id="logo" src="img/logo.png">
+                <img id="button" src="img/button.png">
+                <div id="value"></div>
+                <div id="error">Unsupported placement size :(</div>
+            </div>
+        </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
